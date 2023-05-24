@@ -1,5 +1,5 @@
 import firebase from "firebase/app";
-import "firebase/auth";
+import "firebase/auth"; //authentication을 사용하기 위해 import
 import "firebase/firestore";
 import "firebase/storage";
 
@@ -17,4 +17,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-export default firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
+
+// 한 번만 호출시키고 사용할 수 있음
+export const authService = firebase.auth();
