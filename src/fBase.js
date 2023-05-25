@@ -1,7 +1,7 @@
-import firebase from "firebase/app";
-import "firebase/auth"; //authentication을 사용하기 위해 import
-import "firebase/firestore";
-import "firebase/storage";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth"; //authentication을 사용하기 위해 import
+import "firebase/compat/firestore";
+import "firebase/compat/storage";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
